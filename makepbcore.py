@@ -740,7 +740,7 @@ def main(args_):
         reproduction_creator = ''
     if args.acquisition_type:
         if acquisition_type == 'Reproduction':
-            Date_Of_Donation = instantiationDate_mo.split('T')[0]
+            Date_Of_Donation = args.donation_date
             # if a reproduction, then there's no Donor/transfer of title.
             Donor = 'n/a'
         else:
